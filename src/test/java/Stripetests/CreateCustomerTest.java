@@ -31,7 +31,7 @@ public class CreateCustomerTest extends BaseTest {
     {
         Response response= CreateCustomer.validcustomer(data);
         response.prettyPrint();
-        Assert.assertEquals(response.statusCode(),400);
+        Assert.assertEquals(response.statusCode(),200);
     }
 
 
