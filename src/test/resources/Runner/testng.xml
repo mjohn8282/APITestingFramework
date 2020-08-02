@@ -13,15 +13,15 @@
             <class name="Stripetests.CreateCustomerTest"/>
         </classes>
     </test>
-<!--    <test name="delete customer">-->
-<!--        <classes>-->
-<!--            <class name="Stripetests.DeleteCustomerTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="delete customer">
+        <classes>
+            <class name="Stripetests.DeleteCustomerTest"/>
+        </classes>
+    </test>
 
-<!--    <test name="retrieve customer">-->
-<!--        <classes>-->
-<!--            <class name="Stripetests.GetCustomerTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="retrieve customer">
+        <classes>
+            <class name="Stripetests.UpdateCustomerTest"/>
+        </classes>
+    </test>
 </suite>

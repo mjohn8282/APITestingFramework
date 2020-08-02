@@ -9,23 +9,29 @@ import static io.restassured.RestAssured.given;
 
 public class CreateCustomer extends BaseTest {
 
-    public static Response validcustomer(Hashtable<String,String> data){
+    public static Response validcustomer(Hashtable<String, String> data) {
 
-        Response response=given().auth()
+        Response response = given().auth()
                 .basic(config.getProperty("secretkey"),
-                        "").formParam("email",data.get("Email")).formParam("name",data.get("Name")).formParam("phone",data.get("Phone")).log().all().post(config.getProperty("endpoint"));
+                        "").formParam("email", data.get("Email")).formParam("name", data.get("Name")).
+                        formParam("phone", data.get("Phone")).log().all().post(config.getProperty("endpoint"));
 
         return response;
 
     }
 
-    public static Response Invalidcustomer(Hashtable<String,String> data){
+    public static Response Invalidcustomer(Hashtable<String, String> data) {
 
-        Response response=given().auth()
+        Response response = given().auth()
                 .basic(config.getProperty("secretkey"),
-                        "").formParam("email",data.get("Email")).formParam("name",data.get("Name")).formParam("phone",data.get("Phone")).log().all().post(config.getProperty("endpoint"));
+                        "").formParam("email", data.get("Email")).formParam("name", data.get("Name")).
+                        formParam("phone", data.get("Phone")).log().all().post(config.getProperty("endpoint"));
 
         return response;
 
     }
 }
+
+
+
+
